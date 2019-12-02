@@ -1,0 +1,18 @@
+@import "../../variables.scss";
+
+.not-found {
+	@include fullscreen;
+	@include centered-v;
+	background-color: black;
+	color: rgb(23, 172, 199);
+}
+
+.not-found > h1 {
+	font-size: 40vw;
+	margin: -10vh 0 0 0;
+}
+
+.not-found > h2 {
+	font-size: 9.5vw;
+	margin: calc(-14vw) 0 0 0;
+}

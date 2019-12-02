@@ -1,0 +1,330 @@
+@import "../../variables.scss";
+
+$stargate-dark-blue: rgb(3, 32, 70);
+$stargate-blue: rgb(19, 157, 248);
+$stargate-gray: rgb(70, 70, 70);
+$stargate-dark-gray: rgb(40, 40, 40);
+$stargate-light-orange: rgb(243, 182, 103);
+$stargate-orange: rgb(255, 115, 0);
+
+.stargate {
+	@include fullscreen;
+	@include centered-v;
+	background-color: $stargate-dark-blue;
+}
+
+.stargate > .stargate-container {
+	position: relative;
+	@include centered-v;
+	height: calc(40vw);
+	width: 40vw;
+	border-radius: 50%;
+	background-color: $stargate-gray;
+	box-shadow: inset rgba(255, 255, 255, 0.2) 0 0 calc(1vw),
+							rgba(8, 98, 233, 0.75) 0 0 100px;
+}
+
+.stargate > .stargate-container > .ring-one {
+	@include centered-v;
+	height: calc(35vw);
+	width: 35vw;
+	border-radius: 50%;
+	background-color: $stargate-gray;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0 3px,
+							inset rgba(0, 0, 0, 0.5) 0 0 10px,
+							inset rgba(19, 157, 248, 0.25) 0 0 15px,
+							rgba(8, 98, 233, 0.5) 0 0 20px;
+	overflow: hidden;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two {
+	@include centered-v;
+	height: calc(32vw);
+	width: 32vw;
+	border-radius: 50%;
+	background-color: $stargate-gray;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0 3px,
+							inset rgba(0, 0, 0, 0.5) 0 0 10px,
+							inset rgba(19, 157, 248, 0.25) 0 0 15px,
+							rgba(8, 98, 233, 0.6) 0 0 20px;
+	overflow: hidden;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon {
+	@include centered-v;
+	height: calc(30vw);
+	width: 30vw;
+	border-radius: 50%;
+	background-color: $stargate-blue;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0 3px,
+							inset rgba(0, 0, 0, 0.5) 0 0 10px,
+							rgba(19, 157, 248, 0.75) 0 0 20px;
+	overflow: hidden;
+}
+
+.stargate > .stargate-container > .chevrons {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: calc(40vw);
+	width: 40vw;
+	border-radius: 100%;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container {
+	@include centered-v;
+	width: 4vw;
+	height: 0;
+	border-left: 1vw solid transparent;
+	border-right: 1vw solid transparent;
+	border-bottom: 2.75vw solid $stargate-gray;
+	filter: drop-shadow(rgb(30, 30, 30) 0 0 5px)
+					drop-shadow(rgba(19, 157, 248, 0.4) 0 0 10px);
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container > .chevron {
+	margin: 0 0 calc(-3.75vw) 0;
+	width: 2.5vw;
+	height: 0;
+	border-left: 0.75vw solid transparent;
+	border-right: 0.75vw solid transparent;
+	border-bottom: 2.5vw solid $stargate-orange;
+	filter: drop-shadow($stargate-light-orange 0 0 5px);
+	overflow: hidden;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.one {
+	transform: rotate(180deg);
+	position: absolute;
+	top: 0;
+	left: 17.5vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.two {
+	position: absolute;
+	bottom: 0;
+	left: 17.5vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.three {
+	transform: rotate(90deg);
+	position: absolute;
+	top: calc(17.5vw);
+	left: -0.5vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.four {
+	transform: rotate(-90deg);
+	position: absolute;
+	top: calc(17.5vw);
+	right: -0.5vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.five {
+	transform: rotate(-135deg);
+	position: absolute;
+	top: calc(5.125vw);
+	right: 5.125vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.six {
+	transform: rotate(-45deg);
+	position: absolute;
+	bottom: calc(5.125vw);
+	right: 5.125vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.seven {
+	transform: rotate(45deg);
+	position: absolute;
+	bottom: calc(5.125vw);
+	left: 5.125vw;
+}
+
+.stargate > .stargate-container > .chevrons > .chevron-container.eight {
+	transform: rotate(135deg);
+	position: absolute;
+	top: calc(5.125vw);
+	left: 5.125vw;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one {
+	@include centered-v;
+	height: calc(26vw);
+	width: 26vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 50px,
+							rgba(8, 98, 233, 0.75) 0 0 30px,
+							inset rgba(8, 98, 233, 0.75) 0 0 50px;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two {
+	@include centered-v;
+	height: calc(21vw);
+	width: 21vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 50px,
+							rgba(8, 98, 233, 0.75) 0 0 30px,
+							inset rgba(8, 98, 233, 0.75) 0 0 50px;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three {
+	@include centered-v;
+	height: calc(16vw);
+	width: 16vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 50px,
+							rgba(8, 98, 233, 0.75) 0 0 30px,
+							inset rgba(8, 98, 233, 0.75) 0 0 50px;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four {
+	@include centered-v;
+	height: calc(11vw);
+	width: 11vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 50px,
+							rgba(8, 98, 233, 0.75) 0 0 30px,
+							inset rgba(8, 98, 233, 0.75) 0 0 50px;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four > .ripple-five {
+	@include centered-v;
+	height: calc(7vw);
+	width: 7vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 50px,
+							rgba(8, 98, 233, 0.75) 0 0 30px,
+							inset rgba(8, 98, 233, 0.75) 0 0 50px;
+}
+
+.stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four > .ripple-five > .ripple-six {
+	@include centered-v;
+	height: calc(3vw);
+	width: 3vw;
+	border-radius: 100%;
+	box-shadow: rgba(102, 189, 247, 0.25) 0 0 30px,
+							rgba(8, 98, 233, 0.75) 0 0 20px,
+							inset rgba(8, 98, 233, 0.75) 0 0 20px;
+}
+
+.stargate > .stargate-container > .chevrons > .groove {
+	height: calc(2.5vw);
+	width: 0.15vw;
+	background-color: $stargate-dark-gray;
+	border-radius: 10px;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.one {
+	transform: rotate(16.875deg);
+	position: absolute;
+	bottom: calc(0.5vw);
+	left: 15.375vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.two {
+	transform: rotate(28.125deg);
+	position: absolute;
+	bottom: calc(2.75vw);
+	left: 10vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.three {
+	transform: rotate(61.875deg);
+	position: absolute;
+	bottom: calc(8.25vw);
+	left: 4.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.four {
+	transform: rotate(73.125deg);
+	position: absolute;
+	bottom: calc(15.5vw);
+	left: 1.4vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.five {
+	transform: rotate(106.875deg);
+	position: absolute;
+	top: calc(13.5vw);
+	left: 1.9vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.six {
+	transform: rotate(112.5deg);
+	position: absolute;
+	top: calc(8.25vw);
+	left: 4.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.seven {
+	transform: rotate(151.875deg);
+	position: absolute;
+	top: calc(2.65vw);
+	left: 10.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.eight {
+	transform: rotate(163.125deg);
+	position: absolute;
+	top: calc(0.65vw);
+	left: 15.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.nine {
+	transform: rotate(-16.875deg);
+	position: absolute;
+	bottom: calc(0.5vw);
+	right: 15.375vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.ten {
+	transform: rotate(-28.125deg);
+	position: absolute;
+	bottom: calc(2.75vw);
+	right: 10vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.eleven {
+	transform: rotate(-61.875deg);
+	position: absolute;
+	bottom: calc(8.25vw);
+	right: 4.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.twelve {
+	transform: rotate(-73.125deg);
+	position: absolute;
+	bottom: calc(15.5vw);
+	right: 1.4vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.thirteen {
+	transform: rotate(-106.875deg);
+	position: absolute;
+	top: calc(13.5vw);
+	right: 1.9vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.fourteen {
+	transform: rotate(-112.5deg);
+	position: absolute;
+	top: calc(8.25vw);
+	right: 4.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.fifteen {
+	transform: rotate(-151.875deg);
+	position: absolute;
+	top: calc(2.65vw);
+	right: 10.25vw;
+}
+
+.stargate > .stargate-container > .chevrons > .groove.sixteen {
+	transform: rotate(-163.125deg);
+	position: absolute;
+	top: calc(0.65vw);
+	right: 15.25vw;
+}

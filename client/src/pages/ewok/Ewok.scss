@@ -1,0 +1,141 @@
+@import "../../variables.scss";
+
+$ewok-orange: rgb(207, 105, 9);
+$ewok-light-brown: rgb(167, 125, 91);
+$ewok-brown: rgb(116, 75, 29);
+$ewok-dark-brown: rgb(78, 46, 15);
+
+.ewok {
+	@include fullscreen;
+	@include centered-v;
+	background-color: $ewok-orange;
+}
+
+.ewok > .ear-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80vw;
+	margin: 0 0 calc(-1.5vw) 0;
+}
+
+.ewok > .ear-container > .ear {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: calc(15vw);
+	width: 15vw;
+	background-color: $ewok-brown;
+	border-radius: 100%;
+}
+
+.ewok > .ear-container > .ear > .ear-cutout {
+	width: 16vw;
+	height: calc(8vw);
+	background-color: $ewok-orange;
+	border-radius: 100%;
+}
+
+.ewok > .ear-container > .ear > .ear-cutout.left {
+	transform: rotate(-40deg);
+	margin: 0 0 calc(-0.25vw) 5vw;
+}
+
+.ewok > .ear-container > .ear > .ear-cutout.right {
+	transform: rotate(40deg);
+	margin: 0 5vw calc(-0.25vw) 0;
+}
+
+.ewok > .ear-container > .stitches {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ewok > .ear-container > .stitches > .stitch-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 3vw calc(-2.5vw) 3vw;
+}
+
+.ewok > .ear-container > .stitches > .stitch-container > .stitch {
+	height: calc(1.5vw);
+	width: 7.5vw;
+	border-radius: 10px;
+	background-color: $ewok-dark-brown;
+}
+
+.ewok > .ear-container > .stitches > .stitch-container > .stitch.left {
+	transform: rotate(-45deg);
+	margin: 0 calc(-7.5vw) 0 0;
+}
+
+.ewok > .ear-container > .stitches > .stitch-container > .stitch.right {
+	transform: rotate(45deg);
+}
+
+.ewok > .face-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $ewok-brown;
+	width: 60vw;
+	height: calc(30vw);
+	border-radius: 35%;
+	overflow: hidden;
+}
+
+.ewok > .face-container > .eyes-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50vw;
+}
+
+.ewok > .face-container > .eyes-container > .eye {
+	background-color: black;
+	border-radius: 100%;
+	height: calc(10vw);
+	width: 10vw;
+}
+
+.ewok > .face-container > .eyes-container > .eye > .pupil {
+	background-color: white;
+	border-radius: 100%;
+	height: calc(3vw);
+	width: 3vw;
+	margin: calc(2vw) 0 0 2vw;
+}
+
+.ewok > .face-container > .nose {
+	height: 0;
+	width: 0;
+	border-left: 4vw solid transparent;
+	border-right: 4vw solid transparent;
+	border-bottom: 3vw solid $ewok-dark-brown;
+	border-radius: 100%;
+	margin: 0 0 calc(4vw) 0;
+	z-index: 3;
+}
+
+.ewok > .face-container > .muzzle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(20vw);
+	width: 60vw;
+	margin: calc(-4.5vw) 0 calc(-12vw) 0;
+	border-radius: 40%;
+	background-color: $ewok-light-brown;
+}
+
+.ewok > .face-container > .muzzle > .mouth {
+	height: calc(5vw);
+	width: 10vw;
+	margin: calc(-8vw) 0 0 0;
+	border-radius: 100%;
+	background-color: black;
+}

@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+* {
+	font-family: 'Bebas Neue', cursive;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	background-color: black;
+}

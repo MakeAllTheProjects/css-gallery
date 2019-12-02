@@ -1,0 +1,123 @@
+@import '../../variables.scss';
+
+$pikachu-pink: rgb(253, 125, 147);
+$pikachu-medium-pink: rgb(252, 99, 125);
+$pikachu-dark-pink: rgb(185, 73, 92);
+$pikachu-red: rgb(255, 51, 0);
+$pikachu-yellow: rgb(255, 200, 0);
+
+.pikachu {
+	@include fullscreen;
+	@include centered-v;
+	background-color: $pikachu-yellow;
+}
+
+.pikachu > .eyes-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 30vw;
+}
+
+.pikachu > .eyes-container > .eye {
+	background-color: black;
+	border-radius: 100%;
+	height: calc(10vw);
+	width: 10vw;
+}
+
+.pikachu > .eyes-container > .eye > .pupil {
+	background-color: white;
+	border-radius: 100%;
+	height: calc(3vw);
+	width: 3vw;
+	margin: calc(2vw) 0 0 2vw;
+}
+
+.pikachu > .cheek-container {
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 55vw;
+}
+
+.pikachu > .cheek-container > .cheek {
+	background-color: $pikachu-red;
+	height: calc(12vw);
+	width: 12vw;
+	border-radius: 100%;
+}
+
+.pikachu > .cheek-container > .nose {
+	height: 0;
+	width: 0;
+	border-left: 3vw solid transparent;
+	border-right: 3vw solid transparent;
+	border-top: 2vw solid black;
+	border-radius: 100%;
+	margin: 0 0 calc(10vw) 0;
+	z-index: 3;
+}
+
+.pikachu > .mouth-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: calc(-11.5vw) 0 0 0;
+}
+
+.pikachu > .mouth-container > .mouth {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: calc(6vw);
+	width: 10vw;
+	background-color: black;
+	border-radius: 100%;
+	z-index: 2;
+}
+
+.pikachu > .mouth-container > .mouth > .mouth-remove {
+	background-color: $pikachu-yellow;
+	height: calc(6vw);
+	width: 10vw;
+	border-radius: 100%;
+	margin: calc(-0.75vw) 0 0 0;
+}
+
+.pikachu > .mouth-container > .mouth.right {
+	margin: 0 0 0 -0.1vw;
+}
+
+.pikachu > .mouth-container > .mouth.left {
+	margin: 0 -0.1vw 0 0;
+}
+
+.pikachu > .mouth-open {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: calc(-3vw) 0 0 0;
+	height: calc(6.5vw);
+	width: 6vw;
+	border-radius: 0 0 100% 100%;
+	background-color: black;
+}
+
+.pikachu > .mouth-open > .throat {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: calc(6vw);
+	width: 5vw;
+	border-radius: 0 0 100% 100%;
+	background-color: $pikachu-dark-pink;
+	overflow: hidden;
+}
+
+.pikachu > .mouth-open > .throat > .tongue {
+	height: calc(3.5vw);
+	width: 5vw;
+	background-color: $pikachu-pink;
+	border-radius: 100%;
+}

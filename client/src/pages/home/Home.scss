@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.home {
+	@include fullscreen;
+	@include centered-v;
+	background-color: black;
+	color: rgb(23, 172, 199);
+}
+
+.home > h1 {
+	font-size: 25vw;
+}
+
+.hint-container {
+	position: fixed;
+	top: 0.3vh;
+	left: calc(8vh);
+	display: flex;
+	align-items: center;
+	transition: 1s all ease;
+}
+
+.arrow {
+	height: 6vh;
+	margin: -0.25vh calc(2vh) 0 0;
+}
+
+.hint-container {
+	font-size: 4.25vh;
+}
