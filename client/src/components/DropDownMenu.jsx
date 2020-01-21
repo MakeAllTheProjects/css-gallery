@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "@reach/router"
 import "./DropDownMenu.scss"
+import GithubIcon from "../images/github-icon"
 
 export default function DropDownMenu (props) {
 	const [isOpen, setIsOpen] = React.useState()
@@ -61,6 +62,17 @@ export default function DropDownMenu (props) {
 					Home
 				</Link>
 				{mapLinks}
+				<a
+					className="home-link"
+					href="https://github.com/MeghanBomberger/css-gallery"
+					style={{
+						borderTop: `1px solid ${props.color}`
+					}}
+					fill={props.color}
+					title="checkout the repo"
+				>
+					<GithubIcon fill={props.color}/>
+				</a>
 			</div>
 		</nav>
 	)
