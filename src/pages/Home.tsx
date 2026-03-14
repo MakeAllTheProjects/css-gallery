@@ -14,7 +14,7 @@ export default function Home() {
       <h1>Welcome</h1>
       <h2>to Meghan's CSS Gallery</h2>
       <h3>Click the menu icon to view the gallery</h3>
-      <p>A collection of pure CSS illustrations.</p>
+      <p>A collection of pure CSS illustrations. All designs are made using only HTML and CSS.</p>
     </main>
   )
 }
