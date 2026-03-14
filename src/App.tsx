@@ -27,7 +27,7 @@ function AnimatedRoutes() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/css-gallery">
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/pikachu">Pikachu</NavLink>
