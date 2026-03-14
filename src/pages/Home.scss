@@ -27,6 +27,12 @@ h3 {
   animation: glow-blink 3s ease-in-out infinite;
 }
 
+p {
+  font-size: 3vw;
+  font-family: var(--accent-font);
+  margin-top: 12vh;
+}
+
 .hint-container {
 	position: fixed;
 	top: 0.3vh;
