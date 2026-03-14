@@ -12,6 +12,8 @@ export default function Home() {
         onClick={() => setIsOpen(!isOpen)}
       />
       <h1>Welcome</h1>
+      <h2>to Meghan's CSS Gallery</h2>
+      <h3>Click the menu icon to view the gallery</h3>
     </main>
   )
 }

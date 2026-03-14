@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Jacquard+24&family=Lily+Script+One&display=swap');
+
 $color-primary: rgb(23, 172, 199);
 $color-background: rgb(20, 20, 20);
+$color-glow: rgb(57, 253, 249);
 
 @mixin fullscreen {
 	position: fixed;
@@ -16,7 +19,11 @@ $color-background: rgb(20, 20, 20);
 	justify-content: center;
 }
 
+$secondary-font: 'Charmonman', cursive;
+
 :root {
   --color-primary: #{$color-primary};
   --color-background: #{$color-background};
+  --color-glow: #{$color-glow};
+  --secondary-font: #{$secondary-font};
 }
