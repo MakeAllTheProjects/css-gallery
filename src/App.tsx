@@ -14,7 +14,6 @@ function AnimatedRoutes() {
       <CSSTransition key={location.key} classNames="page" timeout={400} unmountOnExit>
         <Routes location={location}>
           <Route path="/" element={<Home />} />
-          <Route path="/css-gallery" element={<Home />} />
           <Route path="/ewok" element={<Ewok />} />
           <Route path="/pikachu" element={<Pikachu />} />
           <Route path="/stargate" element={<Stargate />} />
