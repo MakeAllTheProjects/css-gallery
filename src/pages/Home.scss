@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+.home {
+	@include fullscreen;
+	@include centered-v;
+	background-color: black;
+	color: $color-primary;
+}
+
+h1 {
+	font-size: 25vw;
+}
+
+h2 {
+  font-size: 8.75vw;
+  margin: -5vh 0 5vh 0;
+}
+
+@keyframes glow-blink {
+  0%, 100% { text-shadow: 0 0 16px $color-glow, 0 0 32px $color-glow; }
+  50% { text-shadow: none; }
+}
+
+h3 {
+  font-size: 3vw;
+  font-family: var(--secondary-font);
+  animation: glow-blink 3s ease-in-out infinite;
+}
+
+.hint-container {
+	position: fixed;
+	top: 0.3vh;
+	left: calc(8vh);
+	display: flex;
+	align-items: center;
+	transition: 1s all ease;
+}
+
+.arrow {
+	height: 6vh;
+	margin: -0.25vh calc(2vh) 0 0;
+}
+
+.hint-container {
+	font-size: 4.25vh;
+}
