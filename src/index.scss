@@ -4,6 +4,7 @@
   padding: 0;
 }
 
-body {
+body, #root {
+  background-color: black;
   font-family: system-ui, sans-serif;
 }
