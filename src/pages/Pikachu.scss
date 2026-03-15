@@ -8,8 +8,8 @@ $pikachu-yellow: rgb(255, 200, 0);
 $pikachu-black: rgb(0,0,0);
 
 .pikachu {
-	@include fullscreen;
-	@include centered-v;
+	@include variables.fullscreen;
+	@include variables.centered-v;
 	background-color: $pikachu-yellow;
 	--pikachu-black: #{$pikachu-black};
 }

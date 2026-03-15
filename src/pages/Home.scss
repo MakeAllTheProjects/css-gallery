@@ -1,23 +1,35 @@
 @use "../variables.scss";
 
 .home {
-	@include fullscreen;
-	@include centered-v;
+	@include variables.fullscreen;
+	@include variables.centered-v;
 	background-color: black;
-	color: $color-primary;
+	color: variables.$color-primary;
 }
 
 h1 {
 	font-size: 25vw;
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 20vw;
+  }
+  @media (min-width: 1000px) {
+    font-size: 15vw;
+  } 
 }
 
 h2 {
   font-size: 8.75vw;
   margin: -5vh 0 5vh 0;
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 6vw;
+  }
+  @media (min-width: 1000px) {
+    font-size: 4vw;
+  } 
 }
 
 @keyframes glow-blink {
-  0%, 100% { text-shadow: 0 0 16px $color-glow, 0 0 32px $color-glow; }
+	0%, 100% { text-shadow: 0 0 16px variables.$color-glow, 0 0 32px variables.$color-glow; }
   50% { text-shadow: none; }
 }
 
@@ -25,12 +37,24 @@ h3 {
   font-size: 3vw;
   font-family: var(--secondary-font);
   animation: glow-blink 3s ease-in-out infinite;
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 2vw;
+  }
+  @media (min-width: 1000px) {
+    font-size: 1.5vw;
+  } 
 }
 
 p {
   font-size: 3vw;
   font-family: var(--accent-font);
   margin-top: 12vh;
+  @media (min-width: 700px) and (max-width: 1000px) {
+    font-size: 2vw;
+  }
+  @media (min-width: 1000px) {
+    font-size: 1.5vw;
+  } 
 }
 
 .hint-container {

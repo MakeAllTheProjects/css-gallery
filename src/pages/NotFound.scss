@@ -1,10 +1,10 @@
 @use "../variables.scss";
 
 .not-found {
-	@include fullscreen;
-	@include centered-v;
+	@include variables.fullscreen;
+	@include variables.centered-v;
 	background-color: black;
-	color: rgb(23, 172, 199);
+	color: variables.$color-primary;
 }
 
 .not-found > h1 {

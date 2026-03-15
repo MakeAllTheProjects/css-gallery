@@ -6,8 +6,8 @@ $ewok-brown: rgb(116, 75, 29);
 $ewok-dark-brown: rgb(78, 46, 15);
 
 .ewok {
-	@include fullscreen;
-	@include centered-v;
+	@include variables.fullscreen;
+	@include variables.centered-v;
 	background-color: $ewok-orange;
   --ewok-dark-brown: #{$ewok-dark-brown};
 }

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Jacquard+24&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Jacquard+24&family=Lily+Script+One&family=Share+Tech+Mono&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,5 +10,5 @@
 
 body, #root {
   background-color: black;
-  font-family: system-ui, sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }

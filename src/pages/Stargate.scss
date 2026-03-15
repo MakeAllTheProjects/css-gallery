@@ -1,5 +1,4 @@
 @use "../variables.scss";
-
 $stargate-dark-blue: rgb(3, 32, 70);
 $stargate-blue: rgb(19, 157, 248);
 $stargate-gray: rgb(70, 70, 70);
@@ -8,15 +7,15 @@ $stargate-light-orange: rgb(243, 182, 103);
 $stargate-orange: rgb(255, 115, 0);
 
 .stargate {
-	@include fullscreen;
-	@include centered-v;
-	background-color: $stargate-dark-blue;
-  --stargate-blue: #{$stargate-blue};
+		@include variables.fullscreen;
+		@include variables.centered-v;
+		background-color: $stargate-dark-blue;
+		--stargate-blue: #{$stargate-blue};
 }
 
 .stargate > .stargate-container {
 	position: relative;
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(40vw);
 	width: 40vw;
 	border-radius: 50%;
@@ -26,7 +25,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(35vw);
 	width: 35vw;
 	border-radius: 50%;
@@ -39,7 +38,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(32vw);
 	width: 32vw;
 	border-radius: 50%;
@@ -52,7 +51,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(30vw);
 	width: 30vw;
 	border-radius: 50%;
@@ -75,7 +74,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .chevrons > .chevron-container {
-	@include centered-v;
+	@include variables.centered-v;
 	width: 4vw;
 	height: 0;
 	border-left: 1vw solid transparent;
@@ -152,7 +151,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(26vw);
 	width: 26vw;
 	border-radius: 100%;
@@ -162,7 +161,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(21vw);
 	width: 21vw;
 	border-radius: 100%;
@@ -172,7 +171,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(16vw);
 	width: 16vw;
 	border-radius: 100%;
@@ -182,7 +181,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(11vw);
 	width: 11vw;
 	border-radius: 100%;
@@ -192,7 +191,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four > .ripple-five {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(7vw);
 	width: 7vw;
 	border-radius: 100%;
@@ -202,7 +201,7 @@ $stargate-orange: rgb(255, 115, 0);
 }
 
 .stargate > .stargate-container > .ring-one > .ring-two > .event-horizon > .ripple-one > .ripple-two > .ripple-three > .ripple-four > .ripple-five > .ripple-six {
-	@include centered-v;
+	@include variables.centered-v;
 	height: calc(3vw);
 	width: 3vw;
 	border-radius: 100%;

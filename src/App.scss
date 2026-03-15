@@ -1,10 +1,14 @@
-@use './variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+* {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+  box-sizing: border-box;
+// Removed invalid @use statement
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Jacquard+24&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Jacquard+24&family=Lily+Script+One&family=Share+Tech+Mono&display=swap');
 
 * {
-	font-family: 'Bebas Neue', cursive;
-	margin: 0;
-	box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .app {
@@ -27,4 +31,7 @@
 .page-exit-active {
   opacity: 0;
   transition: opacity 400ms ease-in-out;
+}
+
+// Ensure all blocks are closed
 }
